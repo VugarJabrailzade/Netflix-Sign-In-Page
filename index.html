@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+   
+    <div class="page-image">
+        <div class="pageContainer flex flex-col items-center">
+            <div class="page-shadow"></div>
+            <div class="headerPage w-full  h-[110px]">
+                <div class=" ml-10">
+                    <img class="w-[147px] h-[110px]" src="Image/icons8-netflix-167.png" alt="">
+                </div>
+            </div>
+            <div class="signInSection mb-20 w-[450px] h-[660px] flex justify-center">
+                <div class="sectionHead flex flex-col justify-around gap-[150px]">
+                    <div class="w-[314px] h-[70px] flex flex-col">
+                        <div class="mb-6">
+                            <h1 class="text-[white] font-bold text-3xl">Sign In</h1>
+                        </div>
+                        <div class="inputSection flex flex-col gap-2 mt-4">
+                            <input class="w-[314px] h-[50px]" type="email, number" placeholder="Email or phone number">
+                            <input class="h-[50px] h-[314px]" type="password" placeholder="Password">
+                        </div>
+                        <div>
+                            <button class=" mt-10 rounded w-[314px] h-[48px] bg-[red] text-[white] font-bold opacity-100">
+                                Sign In
+                            </button>
+                        </div>
+                        <div class="rememberSection mt-4 flex justify-between">
+                            <div class="flex gap-2 items-center">
+                                <input class="" id="rememberMe" checked name="rememberMe" type="checkbox">
+                                <label class="text-[#b3b3b3] text-sm" for="rememberMe">Remember me</label>
+                            </div>
+                            <div>
+                                <a href="#" class="text-[#b3b3b3] text-sm ">Need help?</a>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="downSide flex  flex-col w-[314px] h-[100px]">
+                        <div class="">
+                            <span class="text-[#737373] text-lg">New to Netflix ?</span>
+                            <a class="text-[white] text-lg" href="#">Sign up now</a>
+                        </div>
+                        <div>
+                            <span class="text-sm text-[#737373]">This page is protected by Google reCAPTCHA to ensure you're
+                                not a bot.
+                            </span>
+                            <a class="text-[#0071eb] text-sm font-[400]" href="#">Learn more.</a>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="footerSide w-full mt-20  h-[261px] flex  justify-center">
+                <div class="sideFooter flex flex-col justify-center gap-4  w-[1000px] h-[241px]">
+                    <div class="footerHead">
+                        <a class="hover:underline decoration-1" href="#">Questions? Contact us.</a>
+                    </div>
+                    <div class="footerMiddle">
+                        <ul class="flex h-[64px]  text-center ">
+                            <li class="w-[256px] h-[16px]">
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li class="w-[256px] h-[16px]">
+                                <a href="#">Help Center</a>
+                            </li>
+                            <li class="w-[256px] h-[16px]">
+                                <a href="#">Term of Use</a>
+                            </li>
+                            <li class="w-[256px] h-[16px]">
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li class="w-[256px] h-[16px]">
+                                <a href="#">Cookie Preferences</a>
+                            </li>
+                            <li class="w-[256px] h-[16px]">
+                                <a href="#">Corporate Information</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="switchLanguage mt-4 flex bg-[black] gap-2 justify-center w-[130px] h-[57px]">
+                        <div class="flex items-center ">
+                            <i class="fa-solid fa-globe text-lg text-[#737373]"></i>
+                        </div>
+                        <select name="language" id="languageSwitch" class="w-[70px] h-[57px] outline-0 relative selectOpt bg-transparent text-[#737373] text-sm">
+                            <option class="text-[#737373] " value="eng">English</option>
+                            <option class="text-[#737373]" value="ru">Русский</option>
+                        </select>
+                    </div>
+    
+                </div>
+            </div>
+    </div>
+
+    </div>
+
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="main.js"></script>
+
+</html>

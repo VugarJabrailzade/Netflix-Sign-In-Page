@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.pageContainer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/8c7d2032-d5b8-4bb2-a7e5-948ac5025467/AZ-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    height: 100%;
+    overflow: hidden;    
+    position: relative;
+    z-index: 1;
+}
+.page-shadow::after{
+    content: "";
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+
+.signInSection{
+    background-color: rgba(0, 0, 0, 0.786);
+}
+
+.inputSection input::placeholder{
+    color: #8c8c8c;
+    padding-left: 15px;
+    font-weight: 500;
+}
+.inputSection input {
+    background-color: #333;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.rememberSection input{
+    width: 16px;
+    height: 16px;
+}
+
+input[type="checkbox"]{
+    accent-color: #737373;
+    color: black;
+}
+.rememberSection a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.footerSide{
+    background-color: rgba(0, 0, 0, 0.786);
+    /* background-color: white; */
+    
+}
+
+.footerHead{
+    font-size: 18px;
+    color: #737373;
+}
+.sideFooter{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.footerMiddle ul {
+    max-width: 1000px;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.footerMiddle ul li{ 
+    width: 24%;
+}
+.footerMiddle ul li a {
+    font-size: 14px;
+    color: #737373;
+}
+.footerMiddle ul li a:hover{
+    text-decoration: underline;
+}
+
+.switchLanguage{
+    border: 1px solid #737373;
+}
+
+#languageSwitch option{
+    position: absolute;
+    background-color: black;
+    width: max-content;
+}
+
+.inputSection input{
+    caret-color: white;
+    outline: none;
+    text-indent: 10px;
+    color: white;
+}
